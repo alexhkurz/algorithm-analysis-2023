@@ -1,0 +1,1 @@
+[Outline of the course](https://hackmd.io/@alexhkurz/BkmoBQUui)
