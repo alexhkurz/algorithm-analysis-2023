@@ -14,6 +14,10 @@ cabal-dev
 cabal.sandbox.config
 *.prof
 *.aux
+*.toc
+*.log
+*.out
+*.synctex.gz
 *.hp
 *.eventlog
 .stack-work/
@@ -21,3 +25,4 @@ cabal.project.local
 cabal.project.local~
 .HTF/
 .ghc.environment.*
+
