@@ -8,4 +8,5 @@ Quick links:
 
 - [Lecture by lecture](lecture-by-lecture.md)
 - [Report](report.md)
+- [Git best practices](git-best-practices.md)
 
