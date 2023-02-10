@@ -8,7 +8,7 @@ Instead of a midterm and final exam, you will write a report. Think of it as a t
 
 The report will be written in Latex. A template for your LaTeX source file [`report.tex`](report/report.tex) and the compiled [pdf](report/report.pdf). See also [`latex-example.tex`](report/latex-example.tex) and [`latex-example.pdf`](report/latex-example.pdf).
 
-- You will keep both report.tex and report.pdf in your private github repository. 
+- You will keep both report.tex and report.pdf in a personal private github repository. 
 - In your repo, make a subdirectory `src` where you store the program files  (if a homework requires programming). 
 - Always use the same repository for all submissions of the course (get in touch if you want to make an exception).
 - Do not name different versions of your report, instead rely on the version control of git.

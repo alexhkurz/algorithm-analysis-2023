@@ -7,4 +7,5 @@ Office hours: TuTh 14:00-15:30 Swenson N305 (I may have to let you in, send me a
 Quick links:
 
 - [Lecture by lecture](lecture-by-lecture.md)
+- [Report](report.md)
 
