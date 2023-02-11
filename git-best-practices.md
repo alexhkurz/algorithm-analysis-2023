@@ -19,10 +19,10 @@ Proper use of git will be considered for grading. Depending on the nature of the
    - Do not track/commit/push machine generated files. 
    - Avoid unthinking use of `git add *`. Only add files that should be tracked. 
    - Run `git status`. If you see under `Untracked files` names that you don't recognize, they are likely machine generated files. Do not track those. Rather add these names to a file named `.gitignore` at the root of your repo.
-  - Build up your `.gitignore` incrementally using `git status` and add files you do not want to track to `.gitignore` step by step. You can start from my .gitignore file in this repo.
+   - Build up your `.gitignore` incrementally using `git status` and add files you do not want to track to `.gitignore` step by step. You can start from my .gitignore file in this repo.
+   - Meaningful commit messages will help yourself and collaborators.
 - Do not create different versions of files by copying them. [Use branches](http://shafiul.github.io/gitbook/3_basic_branching_and_merging.html). 
 - Delete files only in exceptional circumstances. (Btw, even deleted files will remain accessible via the history.)
-- Meaningful commit messages will help yourself and collaborators.
 
 ## Further reading
 
