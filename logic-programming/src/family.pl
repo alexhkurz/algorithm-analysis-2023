@@ -1,10 +1,4 @@
-/*
-      File: family.pl
-
-
-  Family tree.
-
-*/
+/* family.pl Family tree */
 
 parent(arthur,george).
 parent(harriet,george).
@@ -56,7 +50,7 @@ ancestor4(X,Y):-parent(X,Y).
 
 /*
 
-Write ancester2 and  ancester3 by ordering the predicates differently and run them on different examples in Prolog. Try to explain the different outputs. Use trace to verify your explanations.
+Write ancestor2 and  ancestor3 by ordering the predicates differently and run them on different examples in Prolog. Try to explain the different outputs. Use trace to verify your explanations.
 
 */
 
