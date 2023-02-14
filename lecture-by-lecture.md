@@ -12,11 +12,11 @@
 
 I believe my notes linked below explain all the technicalities you need to know, but for motivation, background and general information you need to come to the lectures. The assignment is pen-and-paper, but for the full experience I recommend to [download and install](https://www.swi-prolog.org/download/stable) Prolog. You can follow along and run [the example programs](https://github.com/alexhkurz/algorithm-analysis-2023/tree/main/logic-programming/src) I use in class. 
 
-- L 3.1: [Introduction to Logic Programming](https://github.com/alexhkurz/algorithm-analysis-2023/blob/main/logic-programming/slides/LP1-introduction-to-logic-programming.pdf) ... [Function Symbols and Lists](https://github.com/alexhkurz/algorithm-analysis-2023/blob/main/logic-programming/slides/LP2-function-symbols-and-lists.pdf) ... [How to Trace an Execution](https://github.com/alexhkurz/algorithm-analysis-2023/blob/main/logic-programming/trace.pdf).   
+- L 3.1: [Introduction to Logic Programming](https://github.com/alexhkurz/algorithm-analysis-2023/blob/main/logic-programming/slides/LP1-introduction-to-logic-programming.pdf) ... [Function Symbols and Lists](https://github.com/alexhkurz/algorithm-analysis-2023/blob/main/logic-programming/slides/LP2-function-symbols-and-lists.pdf) ... [How to Trace an Execution](logic-programming/trace.pdf).   
 
 ---
 
-- L 3.2: [Definitions](slides/LP3-definitions.pdf) ... 
+- L 3.2: [Definitions](logic-programming/slides/LP3-definitions.pdf) ... 
 
 Upcoming: Distributed Hash Tables
 
