@@ -16,6 +16,8 @@ I believe my notes linked below explain all the technicalities you need to know,
 
 ---
 
+- L 3.2: [Definitions](slides/LP3-definitions.pdf) ... 
+
 Upcoming: Distributed Hash Tables
 
 
