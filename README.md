@@ -10,3 +10,10 @@ Quick links:
 - [Report](report.md)
 - [Git best practices](git-best-practices.md)
 
+Various links indirectly related to the course:
+
+- Blogs on Software Engineering
+    - [Alex Kladov](https://matklad.github.io/)
+    - [Hillel Wayne](https://www.hillelwayne.com/)
+    - ... more to come ...
+

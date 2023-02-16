@@ -16,11 +16,11 @@ I believe my notes linked below explain all the technicalities you need to know,
 
 - L 3.1: [Introduction to Logic Programming](logic-programming/slides/LP1-introduction-to-logic-programming.pdf) ... [Function Symbols and Lists](logic-programming/slides/LP2-function-symbols-and-lists.pdf) ... [How to Trace an Execution](logic-programming/trace.pdf).   
 
+- L 3.2: In this lecture we will study a simple query-answering algorithm ... [Definitions](logic-programming/slides/LP3-definitions.pdf) ... [Unification](logic-programming/slides/LP4-unification.pdf) ... [Resolution](logic-programming/slides/LP5-resolution.pdf) ... [Worksheet](logic-programming/worksheet.pdf).
+
 ---
 
 Upcoming:
-
-- L 3.2: In this lecture we will study a simple query-answering algorithm ... [Definitions](logic-programming/slides/LP3-definitions.pdf) ... [Unification](logic-programming/slides/LP4-unification.pdf) ... [Resolution](logic-programming/slides/LP5-resolution.pdf)
 
 - Week 4: Distributed Hash Tables
 
