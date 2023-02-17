@@ -12,8 +12,10 @@ Quick links:
 
 Various links indirectly related to the course:
 
-- Blogs on Software Engineering
+- Blogs on Software Engineering (and related)
+    - [Vitalik Buterin](https://vitalik.ca/)
     - [Alex Kladov](https://matklad.github.io/)
     - [Hillel Wayne](https://www.hillelwayne.com/)
+    - [Gary Marcus](https://substack.com/profile/14807526-gary-marcus)
     - ... more to come ...
 
