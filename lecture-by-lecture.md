@@ -20,7 +20,7 @@ To explain the algorithms, unification and resolution, in a short and concise wa
 
 To convince you that the *problem specific language* we created occupies the sweet spot between problem and implementation, compare Slides 4-5 above with Slides 2-3 of an [Implementation of Unification in Haskell](logic-programming/slides/LP4b-unification.pdf)
 
-Finally, we learn how [resolution](logic-programming/slides/LP5-resolution.pdf) works and how to draw SLD-trees.
+Finally, we learn how [resolution](logic-programming/slides/LP5-resolution.pdf) works and how to draw SLD-trees. The algorithm is described on slides 1-5, followed by a number of examples.
     
 To test your understanding of unification and resolution answer the questions of the [Worksheet](logic-programming/worksheet.pdf).
 
