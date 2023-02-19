@@ -17,7 +17,7 @@ The report will be written in Latex. A template for your LaTeX source file [`rep
     README.md
     ```
     The readme should contain name and email.
-- For example, if a homework requires programming, make a subdirectory `src` where you store the relevant program files.
+- For example, if a homework requires programming, make a subdirectory `src` where you store the relevant program files; if you want to include images in your report, make a subdirectory `images`; etc.
 - Always use the same repository for all submissions of the course (get in touch if you think an exception is appropriate).
 - Do not name different versions of your report, instead rely on the version control of git.
 - Give me access to your private github repo by inviting me as a collaborator (my GitHub name is alexhkurz).
