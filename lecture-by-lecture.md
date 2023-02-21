@@ -26,9 +26,7 @@ To test your understanding of unification and resolution answer the questions of
 
 ## Week 4: Distributed Hash Tables
 
-(under construction)
-
-Copy and paste this link into the address bar of the Brave browser: ipfs://QmVkoCcGoyrxSShDy3L36WhrHqnWLWpS2ouANfkME9P3x3
+[Introduction to IPFS](https://hackmd.io/@alexhkurz/rJMmmc-0o)
 
 ---
 
