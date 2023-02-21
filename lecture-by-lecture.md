@@ -26,7 +26,9 @@ To test your understanding of unification and resolution answer the questions of
 
 ## Week 4: Distributed Hash Tables
 
-[Introduction to IPFS](https://hackmd.io/@alexhkurz/rJMmmc-0o)
+- L 4.1:
+    - Review of and [feedback on the homework](feedback-for-homework.md) on finite automata.
+    - [Introduction to IPFS](https://hackmd.io/@alexhkurz/rJMmmc-0o).
 
 ---
 
