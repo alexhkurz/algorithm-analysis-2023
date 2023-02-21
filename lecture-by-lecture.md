@@ -24,11 +24,18 @@ Finally, we learn how [resolution](logic-programming/slides/LP5-resolution.pdf) 
     
 To test your understanding of unification and resolution answer the questions of the [Worksheet](logic-programming/worksheet.pdf).
 
+## Week 4: Distributed Hash Tables
+
+(under construction)
+
+[ipfs.md via gateway](https://ipfs.io/ipfs/QmVkoCcGoyrxSShDy3L36WhrHqnWLWpS2ouANfkME9P3x3?filename=ipfs.md)  
+
+[ipfs.md in Brave](QmVkoCcGoyrxSShDy3L36WhrHqnWLWpS2ouANfkME9P3x3)
+
 ---
 
-Upcoming:
+upcoming:
 
-- Week 4: Distributed Hash Tables
-
+Week 5: Complexity Theory
 
 
