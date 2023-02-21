@@ -30,7 +30,7 @@ To test your understanding of unification and resolution answer the questions of
 
 [ipfs.md via gateway](https://ipfs.io/ipfs/QmVkoCcGoyrxSShDy3L36WhrHqnWLWpS2ouANfkME9P3x3?filename=ipfs.md)  
 
-[ipfs.md in Brave](QmVkoCcGoyrxSShDy3L36WhrHqnWLWpS2ouANfkME9P3x3)
+[ipfs.md in Brave](ifps://QmVkoCcGoyrxSShDy3L36WhrHqnWLWpS2ouANfkME9P3x3)
 
 ---
 
