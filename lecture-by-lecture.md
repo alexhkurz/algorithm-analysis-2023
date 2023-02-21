@@ -28,9 +28,7 @@ To test your understanding of unification and resolution answer the questions of
 
 (under construction)
 
-[ipfs.md via gateway](https://ipfs.io/ipfs/QmVkoCcGoyrxSShDy3L36WhrHqnWLWpS2ouANfkME9P3x3?filename=ipfs.md)  
-
-[ipfs.md in Brave](ipfs://QmVkoCcGoyrxSShDy3L36WhrHqnWLWpS2ouANfkME9P3x3)
+Copy and paste this link into the address bar of the Brave browser: ipfs://QmVkoCcGoyrxSShDy3L36WhrHqnWLWpS2ouANfkME9P3x3
 
 ---
 
