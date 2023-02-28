@@ -33,7 +33,7 @@ To test your understanding of unification and resolution answer the questions of
 
 ---
 
-- L 5.1: [Computability, Turing Machines, Undecidability](https://hackmd.io/@alexhkurz/SyD42sbRs)
+- L 5.1: [Computability, Turing Machines, Undecidability](https://hackmd.io/@alexhkurz/SyD42sbRs) ... [The Proof of the Halting Problem](resources/Halting%20Problem.pdf)
 
 upcoming:
 
