@@ -29,9 +29,11 @@ To test your understanding of unification and resolution answer the questions of
 - L 4.1:
     - Review of and [feedback on the homework](feedback-for-homework.md) on finite automata.
     - [Introduction to IPFS](https://hackmd.io/@alexhkurz/rJMmmc-0o).
-- L 4.2: [Slides](https://hackmd.io/@alexhkurz/S1pML4xCs#).
+- L 4.2: [Slides](https://hackmd.io/@alexhkurz/S1pML4xCs#). nnn
 
 ---
+
+- L 5.1: [Computability, Turing Machines, Undecidability](https://hackmd.io/@alexhkurz/SyD42sbRs)
 
 upcoming:
 
