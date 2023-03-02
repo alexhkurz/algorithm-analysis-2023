@@ -31,15 +31,17 @@ To test your understanding of unification and resolution answer the questions of
     - [Introduction to IPFS](https://hackmd.io/@alexhkurz/rJMmmc-0o).
 - L 4.2: [Slides](https://hackmd.io/@alexhkurz/S1pML4xCs#). 
 
+## Week 5: Computability and Complexity Theory  
+
 - L 5.1: [Computability, Turing Machines, Undecidability](https://hackmd.io/@alexhkurz/SyD42sbRs) ... [The Proof of the Undecidability of the Halting Problem](resources/Halting%20Problem.pdf)
+
+- L 5.2: [Complexity Theory, P vs NP](https://hackmd.io/@alexhkurz/Hk0O2lPCj)
 
 ---
 
-upcoming:
+upcoming (current state of planning):
 
-Week 5: Complexity Theory
-
-Week 6: SAT-solving
+Week 6: SAT-solvers
 
 Week 7: CAP theorem
 

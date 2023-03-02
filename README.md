@@ -17,5 +17,5 @@ Various links indirectly related to the course:
     - [Alex Kladov](https://matklad.github.io/)
     - [Hillel Wayne](https://www.hillelwayne.com/)
     - [Gary Marcus](https://substack.com/profile/14807526-gary-marcus)
-    - ... more to come ...
+    - ... more to come ... let me know your favourites ...
 
