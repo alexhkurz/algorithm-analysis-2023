@@ -41,8 +41,8 @@ To test your understanding of unification and resolution answer the questions of
 
 -L 6.1: We started with [feedback for homework week 3](feedback-for-homework.md) and spent some time revising unification and resolution. 
 
-    - [unifiation exercises](logic-programming/unification-exercises.pdf), with [solutions](logic-programming/unification-solutions.pdf);  
-    - [resolution exercises](logic-programming/resolution-exercises.pdf), with [solutions](logic-programming/resolution-solutions.pdf); 
+  - [unifiation exercises](logic-programming/unification-exercises.pdf), with [solutions](logic-programming/unification-solutions.pdf);  
+  - [resolution exercises](logic-programming/resolution-exercises.pdf), with [solutions](logic-programming/resolution-solutions.pdf); 
 
     Then we got back to last lecture's topic and discussed how to use satisfiability to encode and solve Sudoku.
 
