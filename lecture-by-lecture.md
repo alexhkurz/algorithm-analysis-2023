@@ -39,7 +39,7 @@ To test your understanding of unification and resolution answer the questions of
 
 ## Week 6: SAT-solvers
 
--L 6.1: We started with [feedback for homework week 3](feedback-for-homework.md) and spent some time revising unification and resolution. 
+- L 6.1: We started with [feedback for homework week 3](feedback-for-homework.md) and spent some time revising unification and resolution. 
 
   - [unifiation exercises](logic-programming/unification-exercises.pdf), with [solutions](logic-programming/unification-solutions.pdf);  
   - [resolution exercises](logic-programming/resolution-exercises.pdf), with [solutions](logic-programming/resolution-solutions.pdf); 
