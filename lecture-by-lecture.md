@@ -44,7 +44,7 @@ To test your understanding of unification and resolution answer the questions of
   - [unifiation exercises](logic-programming/unification-exercises.pdf), with [solutions](logic-programming/unification-solutions.pdf);  
   - [resolution exercises](logic-programming/resolution-exercises.pdf), with [solutions](logic-programming/resolution-solutions.pdf); 
 
-    Then we got back to last lecture's topic and discussed how to use satisfiability to encode and solve Sudoku.
+  Then we got back to last lecture's topic and discussed how to use satisfiability to encode and solve Sudoku.
 
 ---
 
