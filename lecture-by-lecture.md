@@ -37,11 +37,15 @@ To test your understanding of unification and resolution answer the questions of
 
 - L 5.2: [Complexity Theory, P vs NP](https://hackmd.io/@alexhkurz/Hk0O2lPCj)
 
+## Week 6: SAT-solvers
+
+-L 6.1: We started with [feedback for homework 2](feedback-for-homework.md) and spent some time revising unification and resolution. 
+    - [unifiation exercises](logic-programming/unification-exercises.pdf), with [solutions](logic-programming/unification-solutions.pdf);
+    - [resolution exercises](logic-programming/resolution-exercises.pdf), with [solutions](logic-programming/resolution-solutions.pdf);
+
 ---
 
 upcoming (current state of planning):
-
-Week 6: SAT-solvers
 
 Week 7: CAP theorem
 
