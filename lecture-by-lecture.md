@@ -44,7 +44,15 @@ To test your understanding of unification and resolution answer the questions of
   - [unifiation exercises](logic-programming/unification-exercises.pdf), with [solutions](logic-programming/unification-solutions.pdf);  
   - [resolution exercises](logic-programming/resolution-exercises.pdf), with [solutions](logic-programming/resolution-solutions.pdf); 
 
-  Then we got back to last lecture's topic and discussed how to use satisfiability to encode and solve [Sudoku](http://anytime.cs.umass.edu/aimath06/proceedings/P34.pdf). In the next lecture, we will learn how to [solve Sudoku with a SAT-solver](https://users.aalto.fi/~tjunttil/2020-DP-AUT/notes-sat/solving.html).
+  We emphasized how, at a high level of abstraction, the topics of Week 2 (Database Query Answering), Week 5 (NP-completeness) and Week 6 (SAT-solvers) are the same.
+
+- L 6.2: How to use propositional logic to [encode and solve Sudoku with a SAT-solver](https://users.aalto.fi/~tjunttil/2020-DP-AUT/notes-sat/solving.html). We also learned how to execute pen-and-paper a simple algorithm for SAT known as [indirect truth tables](https://hackmd.io/@alexhkurz/ByaOUajy2).
+
+## Week 7: The CAP Theorem
+
+- L 7.1: Based on the list of publications of [Leslie Lamport](https://lamport.azurewebsites.net/pubs/pubs.html) I made some remarks on the early history of concurrency and distributed systems. We then read in some detail parts of [Time, Clocks and the Ordering of Events in a Distributed System](resources/Concurrency/Lamport-time-clocks.pdf) (ignore the highlights which I only made to help me structure the lecture.)
+
+- L 7.2: [Susan Davidson etal](resources/Concurrency/CAP%20theorem/Susan%20Davidson%20etal%20-%20Consistency%20in%20a%20Partitioned%20Network-A%20Survey%201984.pdf) ... [Brewer](resources/Concurrency/CAP%20theorem/Eric%20Brewer-Towards%20robust%20distributed%20systems.pdf) ... [Gilbert and Lynch](resources/Concurrency/CAP%20theorem/Gilbert%20Lynch%20CAP%20theorem.pdf)
 
 ---
 
