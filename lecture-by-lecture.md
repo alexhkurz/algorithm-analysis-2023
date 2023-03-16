@@ -48,7 +48,7 @@ To test your understanding of unification and resolution answer the questions of
 
 - L 6.2: How to use propositional logic to [encode and solve Sudoku with a SAT-solver](https://users.aalto.fi/~tjunttil/2020-DP-AUT/notes-sat/solving.html). We also learned how to execute pen-and-paper a simple algorithm for SAT known as [indirect truth tables](https://hackmd.io/@alexhkurz/ByaOUajy2).
 
-## Week 7: The CAP Theorem
+## Week 7: The CAP Theorem 
 
 History is the science of how societies change. If you want to be able to look beyond the hype and see the long-term trends it is important to get a sense of the history of a subject. We use the topic of this week to practice some methods that help us to gain a deeper historical understanding of distributed systems.
 
