@@ -50,7 +50,7 @@ To test your understanding of unification and resolution answer the questions of
 
 ## Week 7: The CAP Theorem 
 
-History is the science of how societies change. If you want to be able to look beyond the hype and see the long-term trends it is important to get a sense of the history of a subject. We use the topic of this week to practice some methods that help us to gain a deeper historical understanding of distributed systems.
+History is the science of how societies change. If you want to be able to look beyond the hype of the day and see the long-term trends it is important to get a sense of the history of a subject. We use the topic of this week to practice some methods that help us to gain a deeper historical understanding of distributed systems.
 
 - L 7.1: Based on the list of publications of [Leslie Lamport](https://lamport.azurewebsites.net/pubs/pubs.html) I made some remarks on the early history of concurrency and distributed systems. We then read in some detail parts of [Time, Clocks and the Ordering of Events in a Distributed System](resources/Concurrency/Lamport-time-clocks.pdf) (ignore the highlights which I only made to help me structure the lecture.)
 
