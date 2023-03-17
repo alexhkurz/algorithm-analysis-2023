@@ -62,7 +62,8 @@ History is the science of how societies change. If you want to be able to look b
 
 upcoming (current state of planning):
 
-Week 7: CAP theorem
+Spring Break ... Yeah!
+
 
 ...
 
