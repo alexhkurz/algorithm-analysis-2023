@@ -66,9 +66,9 @@ History is the science of how societies change. If you want to be able to look b
 
 upcoming (current state of planning):
 
-Week 9: Semantic Web and Linked Data.
+Week 9: Semantic Web and Linked Data
 
-Week 10: Model Checking.
+Week 10: Model Checking
 
 ...
 
