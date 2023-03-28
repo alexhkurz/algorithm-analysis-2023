@@ -12,7 +12,7 @@ As a scaffolding for the lectures on DFAs and NFAs I use my notes entitled [A Sh
 
 Questions of knowledge representation underly many areas such as data bases, expert systems, semantic web, ontologies, automated reasoning. This week we will learn the *query-answering algorithm* of the best-known logic programming language, Prolog.
 
-I believe my notes linked below explain all the technicalities relevant for the assignment, but for motivation, background and general information you need to come to the lectures. The assignment is pen-and-paper, but for the full experience I recommend to [download and install](https://www.swi-prolog.org/download/stable) Prolog. You can follow along and run [the example programs](resources/Logic/src) I use in class. 
+I believe my notes linked below explain all the technicalities relevant for the assignment, but for motivation, background and general information you need to come to the lectures. The assignment is pen-and-paper, but for the full experience I recommend to [download and install](https://www.swi-prolog.org/download/stable) Prolog. You can follow along and run [the example programs](resources/Logic/logic-programming/src) I use in class. 
 
 [Introduction to Logic Programming](resources/Logic/logic-programming/slides/LP1-introduction-to-logic-programming.pdf) explains the basics. To follow the question-answering algorithm step-by-step learn [How to Trace an Execution](resources/Logic/logic-programming/trace.pdf) using SWI-Prolog. From [Function Symbols and Lists](resources/Logic/logic-programming/slides/LP2-function-symbols-and-lists.pdf) we only need the first slide, the rest is optional.
 
@@ -33,7 +33,7 @@ To test your understanding of unification and resolution answer the questions of
 
 ## Week 5: Computability and Complexity Theory  
 
-- L 5.1: [Computability, Turing Machines, Undecidability](https://hackmd.io/@alexhkurz/SyD42sbRs) ... [The Proof of the Undecidability of the Halting Problem](resources/Halting%20Problem.pdf)
+- L 5.1: [Computability, Turing Machines, Undecidability](https://hackmd.io/@alexhkurz/SyD42sbRs) ... [The Proof of the Undecidability of the Halting Problem](resources/Automata/Halting%20Problem.pdf)
 
 - L 5.2: [Complexity Theory, P vs NP](https://hackmd.io/@alexhkurz/Hk0O2lPCj)
 
@@ -41,8 +41,8 @@ To test your understanding of unification and resolution answer the questions of
 
 - L 6.1: We started with [feedback for homework week 3](feedback-for-homework.md) and spent some time revising unification and resolution. 
 
-  - [unifiation exercises](logic-programming/unification-exercises.pdf), with [solutions](logic-programming/unification-solutions.pdf);  
-  - [resolution exercises](logic-programming/resolution-exercises.pdf), with [solutions](logic-programming/resolution-solutions.pdf); 
+  - [unifiation exercises](resources/Logic/logic-programming/unification-exercises.pdf), with [solutions](resources/Logic/logic-programming/unification-solutions.pdf);  
+  - [resolution exercises](resources/Logic/logic-programming/resolution-exercises.pdf), with [solutions](resources/Logic/logic-programming/resolution-solutions.pdf); 
 
   We emphasized how, at a high level of abstraction, the topics of Week 2 (Database Query Answering), Week 5 (NP-completeness) and Week 6 (SAT-solvers) are the same.
 
