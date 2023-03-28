@@ -60,7 +60,7 @@ History is the science of how societies change. If you want to be able to look b
 
 ## Week 8: Big-O and Complexity Theory
 
-- L 8.1: We started with feedback for [HW6](https://hackmd.io/@alexhkurz/ByaOUajy2) and also presented another version of satisfiability called [propositional tableaux](resources/Logic/logicnotes-tableaux.pdf). After that we discussed the [Big-O notation](resources/Automata/logicnotes-big-O.pdf).
+- L 8.1: We started with feedback for [HW6](https://hackmd.io/@alexhkurz/ByaOUajy2) and also presented another version of satisfiability called [propositional tableaux](resources/Logic/logicnotes-tableaux.pdf). After that we introduced the [Big-O notation](resources/Automata/logicnotes-big-O.pdf) at the hand of [Bubble Sort](https://hackmd.io/@alexhkurz/rk314el-n).
 
 ---
 
