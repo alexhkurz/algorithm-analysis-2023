@@ -58,12 +58,15 @@ History is the science of how societies change. If you want to be able to look b
 
   For further reading I recommend Brewer's [CAP Twelve Years Later: How the "Rules" Have Changed](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed/).
 
+- L 8.1: We started with feedback for [HW6](https://hackmd.io/@alexhkurz/ByaOUajy2) and also presented another version of satisfiability called [propositional tableaux](resources/Logic/logicnotes-tableaux.pdf). After that we discussed the [Big-O notation](resources/Automata/logicnotes-big-O.pdf).
+
 ---
 
 upcoming (current state of planning):
 
-Spring Break ... Yeah!
+Week 9: Semantic Web and Linked Data.
 
+Week 10: Model Checking.
 
 ...
 
