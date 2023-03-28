@@ -1,5 +1,24 @@
 # Feedback for Homework
 
+## Week 6
+
+... 
+
+## Week 5
+
+To prove that a problem L is NP-complete it suffices to 
+- show that L is in NP (usually easy)
+- reduce SAT to L (may require clever coding)
+
+Alternatively, instead of SAT, one can use another problem known to be NP-complete.
+
+Similarly, to prove that a problem L is undecidable, reduce the halting problem to L (not the other way round).
+
+
+## Week 4
+
+I was very happy with the homework on DHTs and key based routing. I gave some individual feedback on the discussions posts on the examples of DHT applications.
+
 ## Week 3
 
 One of the aims of this week's homework was to practice executing algorithms pen-and-paper. It is important that after discussing the homework in class you go back to your work and revise it.
