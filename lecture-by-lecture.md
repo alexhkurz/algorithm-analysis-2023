@@ -31,7 +31,7 @@ To test your understanding of unification and resolution answer the questions of
     - [Introduction to IPFS](https://hackmd.io/@alexhkurz/rJMmmc-0o).
 - L 4.2: [Slides](https://hackmd.io/@alexhkurz/S1pML4xCs#). 
 
-## Week 5: Computability and Complexity Theory  
+## Week 5: Undecidability and NP-Completeness  
 
 - L 5.1: [Computability, Turing Machines, Undecidability](https://hackmd.io/@alexhkurz/SyD42sbRs) ... [The Proof of the Undecidability of the Halting Problem](resources/Automata/Halting%20Problem.pdf)
 
@@ -57,6 +57,8 @@ History is the science of how societies change. If you want to be able to look b
 - L 7.2: Most of the lecture was based on [Susan Davidson etal](resources/Concurrency/CAP%20theorem/Susan%20Davidson%20etal%20-%20Consistency%20in%20a%20Partitioned%20Network-A%20Survey%201984.pdf) (read Introduction and Sections 1 and 2). We had a brief look at [Brewer](resources/Concurrency/CAP%20theorem/Eric%20Brewer-Towards%20robust%20distributed%20systems.pdf) and [Gilbert and Lynch](resources/Concurrency/CAP%20theorem/Gilbert%20Lynch%20CAP%20theorem.pdf).
 
   For further reading I recommend Brewer's [CAP Twelve Years Later: How the "Rules" Have Changed](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed/).
+
+## Week 8: Big-O and Complexity Theory
 
 - L 8.1: We started with feedback for [HW6](https://hackmd.io/@alexhkurz/ByaOUajy2) and also presented another version of satisfiability called [propositional tableaux](resources/Logic/logicnotes-tableaux.pdf). After that we discussed the [Big-O notation](resources/Automata/logicnotes-big-O.pdf).
 
