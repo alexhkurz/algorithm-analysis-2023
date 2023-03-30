@@ -62,6 +62,8 @@ History is the science of how societies change. If you want to be able to look b
 
 - L 8.1: We started with feedback for [HW6](https://hackmd.io/@alexhkurz/ByaOUajy2) and also presented another version of satisfiability called [propositional tableaux](resources/Logic/logicnotes-tableaux.pdf). After that we introduced the [Big-O notation](resources/Automata/logicnotes-big-O.pdf) at the hand of [Bubble Sort](https://hackmd.io/@alexhkurz/rk314el-n).
 
+- L 8.2 was based on these notes on [Complexity Theory](https://hackmd.io/@alexhkurz/rJCjGUz-3).
+
 ---
 
 upcoming (current state of planning):
