@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- saved from url=(0085)file:///Users/alexanderkurz/Documents/leicester-%2DCO7209/Material/MutexExamples.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>SPIN: The mutual exclusion examples from the lecture
+</title>
+</head>
+
+<body bgcolor="white">
+
+<hr>
+
+<center> <h2>SPIN: The mutual exclusion examples from the lecture</h2> </center>
+
+<hr>
+
+<b>We start this tutorial with programs that are easy, so that we can learn the behaviour of the tool on simple examples 
+(<a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.try1.pml">mutex.try1.pml</a>, <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.try2.pml">mutex.try2.pml</a>). 
+Here it is important to understand that we can use SPIN in simulation mode and in verification mode. (What are the differences? Discuss!)
+We finish the tutorial with two examples that are less simple, namely <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.peterson-a.pml">mutex.peterson-a.pml</a> and 
+<a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.peterson-b.pml">mutex.peterson-b.pml</a>. They look almost the same, but are they both correct? </b>
+
+<p>Our first try of programming mutual exclusion is translated into
+Promela as <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.try1.pml">mutex.try1.pml</a>. (There is
+also a slightly different implementation, 
+<a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.try1-simplified.pml">mutex.try1-simplified.pml</a>, of
+the same algorithm.) Promela is a
+pretty straightforward programming language with some special features
+for non-determinism, which I will summarise now. Looking at the <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.try1.pml">mutex.try1.pml</a>, you see 
+</p><ul>
+<li> 2 active processes. All active processes will be executed in
+parallel (instead of "in parallel" one also says "concurrently"); if
+several processes have an enabled command, one of the processes is
+scheduled (chosen) non-deterministically. 
+<ul>
+<li>It is very important to
+understand the concept of non-determinism here. (You already have
+learned a non-determinstic algorithm in the course, namely
+propositional semantic tabeleau.) You may also look at <a href="http://en.wikipedia.org/wiki/Nondeterministic_algorithm">Wikipedia's
+article</a>.</li>
+
+<li> We will learn more about when commands are enabled later. For now
+	it is enough to know that assignments and gotos are always
+	enabled. 
+	</li> 
+	</ul>
+	</li> 
+	
+<li> "_pid" is the process
+	identifier, in the example its value is either 0 or 1. Comparing with <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/first-example.txt">our first example</a>, note
+	how the pid is used cleverly so that the same code can be used for
+	both processes. </li>
+
+<li> a process has to wait if the current command is an expression
+	such as "! flag[other]" and the expression evaluates to
+	zero. (In other words, if the expression evaluates to zero,
+	then the expression, seen as a command, is not enabled.) This
+	may happen here before the "-&gt;".  
+ 
+        <ul><li> The symbol "-&gt;" has
+	here the same meaning as ";" but is used, as a matter of
+	style, to indicate that a process may be forced to wait. </li>
+
+        <li> if all processes have to wait, that is, if no process is
+	enabled, then SPIN sets the predefined variable "timetout" to
+	true. Note that SPIN has no realtime features and "timeout"
+	only means that no process is enabled.</li>
+
+	</ul>
+      </li>
+
+
+    </ul>
+For a definition of
+Promela see the <a href="http://spinroot.com/spin/Man">the
+manual</a>.
+<p></p><p></p><p></p>
+
+<h3>Running SPIN in simulation mode</h3>
+
+Make a new directory and download <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.try1.pml">mutex.try1.pml</a> into that directory. Then execute the command
+    "spin mutex.try1.pml" in a shell and compare with:<p></p><p>
+
+<table width="90%" align="center" border="6" bgcolor="#e0e0e0"><tbody><tr><td nowrap="">
+(Running SPIN in simulation mode.)
+<pre>$ spin mutex.try1.pml
+          process 1 is in the critical section
+      process 0 is in the critical section
+          process 1 is in the critical section
+      process 0 is in the critical section
+      process 0 is in the critical section
+      timeout
+#processes: 2
+                flag[0] = 1
+                flag[1] = 1
+ 31:    proc  1 (P1) line  13 "mutex.try1.pml" (state 4)
+ 31:    proc  0 (P1) line  13 "mutex.try1.pml" (state 4)
+2 processes created
+</pre>
+</td></tr></tbody></table>
+
+</p><p></p>
+
+Remark:
+
+<ul>
+  <li> SPIN without any option is doing a simulation run. Repeating
+the execution will (probably) result in a different simulation.  </li>
+
+  <li> the output is produced by the printf statement in the
+code. Each process that is created receives a number (pid), the first
+process created has pid 0, the second 1, etc. By default, SPIN formats
+the output of the processes in columns, the indentation being
+proportional to the value of pid.</li>
+
+  <li> "timeout" means that no process is enabled, that is, all process are blocked (in this case:
+deadlock) </li>
+  </ul>
+
+<p></p>
+
+  
+  
+How can we find out more about what happened?
+
+  <p></p>
+<h3>Running SPIN in verification mode</h3>
+
+<table width="90%" align="center" border="6" bgcolor="#e0e0e0"><tbody><tr><td nowrap="">
+(Running SPIN in verification mode.)
+<pre>$ spin -a mutex.try1.pml
+$ cc -o pan pan.c
+$ ./pan 
+hint: this search is more efficient if pan.c is compiled -DSAFETY
+pan: invalid end state (at depth 14)
+pan: wrote mutex.try1.pml.trail
+(Spin Version ... IGNORE ALL THE OUTPUT FOLLOWING FROM HERE ...
+</pre>
+</td></tr></tbody></table>
+
+<p></p>
+
+Remark:
+
+<ul>
+  <li> the option -a runs SPIN in verification mode (the <a href="http://www.spinroot.com/spin/Man/Spin.html">list of options</a>
+for spin). It produces a C-file pan.c, which is then compiled. The
+`verifier' is then run using "./pan" as opposed to "pan", since the
+latter may (on some systems) execute a different program of the same
+name.</li>
+
+  <li> "invalid end state" is SPIN terminology for deadlock (what
+would be valid endstates?)</li>
+
+  <li> the example execution (error trace) leading to the deadlock is
+  contained in  the file mutex.try1.pml.trail</li>
+</ul>
+
+<p>Before we look at the error trace let us check whether there is a
+shorter execution sequence.</p>
+
+<table width="90%" align="center" border="6" bgcolor="#e0e0e0"><tbody><tr><td nowrap="">
+(Producing a shortest error trail)
+<pre>$ cc -DREACH -o pan pan.c
+$ ./pan -i -m14
+hint: this search is more efficient if pan.c is compiled -DSAFETY
+error: max search depth too small
+pan: invalid end state (at depth 10)
+pan: wrote mutex.try1.pml.trail
+pan: reducing search depth to 9
+pan: wrote mutex.try1.pml.trail
+pan: reducing search depth to 5
+...
+</pre>
+</td></tr></tbody></table>
+
+<p></p>
+
+Remark:
+<ul>
+
+  <li> -D allows to compile with different options (also called
+  directives), see <a href="http://www.spinroot.com/spin/Man/Pan.html#B">the
+  manual</a> for a list of options for pan. REACH
+  arranges for the verifier to record the depth a reachable state is
+  found at and the option -i sees to it that this information is used
+  to iteratively search for the shortest error trace. -m14 sets a
+  limit of 14 to the maximum search depth.</li>
+  
+  <li> "error: ..." there exist executions longer than the depth limit
+  of 14 steps </li>
+
+  <li>"pan: ..." finally an error trace of length 5 is found and
+  stored in the file mutex.try1.pml.</li>
+
+</ul>
+
+<p>Now let us look at the error trace.</p>
+
+<table width="90%" align="center" border="6" bgcolor="#e0e0e0"><tbody><tr><td nowrap="">
+(Displaying the shortest error trail.)
+<pre>$ spin -p -t mutex.try1.pml
+Starting P1 with pid 0
+Starting P1 with pid 1
+  1:    proc  1 (P1) line   8 "mutex.try1.pml" (state 1)        [me = _pid]
+  1:    proc  1 (P1) line   9 "mutex.try1.pml" (state 2)        [other = (1-_pid)]
+  2:    proc  0 (P1) line   8 "mutex.try1.pml" (state 1)        [me = _pid]
+  2:    proc  0 (P1) line   9 "mutex.try1.pml" (state 2)        [other = (1-_pid)]
+  3:    proc  1 (P1) line  11 "mutex.try1.pml" (state 3)        [flag[me] = 1]
+  4:    proc  0 (P1) line  11 "mutex.try1.pml" (state 3)        [flag[me] = 1]
+spin: trail ends after 4 steps
+#processes: 2
+                flag[0] = 1
+                flag[1] = 1
+  4:    proc  1 (P1) line  12 "mutex.try1.pml" (state 4)
+  4:    proc  0 (P1) line  12 "mutex.try1.pml" (state 4)
+2 processes created
+</pre>
+</td></tr></tbody></table>
+
+
+<p>Remark:</p>
+<ul>
+  <li> -t: performs a guided simulation following the error trace in
+  the corresponding .trail file ("t" for trail or trace).
+  </li>
+
+  <li> -p: responsible for all of the output apart from the last
+  line ("p" for print). This also works in simulation mode: try "spin
+-p mutex.try1.pml". </li>
+
+  <li> You should read the output of Spin next to the program and match the
+  two. Can you explain all the details of the output? For example, what is called "state" by Spin is the program counter local to
+  each process. To see this more clearly, run <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.try1-simplified.pml">mutex.try1-simplified.pml</a> instead and
+  compare the numbers of the states in the output of Spin with the
+  numbers of the labels of the program.&lt;\li&gt;
+  
+</li></ul>
+
+<h3>Another example</h3>
+
+<p>Now let us look at <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.try2.pml">mutex.try2.pml</a>.</p>
+
+<table width="90%" align="center" border="6" bgcolor="#e0e0e0"><tbody><tr><td nowrap="">
+(Running SPIN in simulation mode.)
+<pre>$ spin mutex.try2.pml | more
+      in the critical section
+          in the critical section
+      in the critical section
+          in the critical section
+      in the critical section
+          in the critical section
+      in the critical section
+          in the critical section
+      in the critical section
+--More--
+</pre>
+</td></tr></tbody></table>
+
+<p>Remark:</p>
+<ul>
+  <li> "| more" stops the display of output when the terminal is full.
+  To terminate "more" type "q", to see more of the output type newline
+  or enter.</li>
+
+  <li> We see that the two processes alternate in accessing the
+  critical section.</li>
+</ul>
+
+<p>How can we check for mutual exclusion? Easiest is to modify the
+code as in <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.try2.2.pml">mutex.try2.2.pml</a>. </p><p>
+
+<b>Exercise: Look at the code of <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.try2.2.pml">mutex.try2.2.pml</a> and explain what the variable "cnt" is counting.
+</b></p><p>
+
+We added an assertion assert(cnt==1) which would be violated in case
+that "cnt" would be different from 1. The SPIN verifier will allow us
+to prove that assertions are not violated, but let us look at a
+simulation first. </p><p>
+
+
+<table width="90%" align="center" border="6" bgcolor="#e0e0e0"><tbody><tr><td nowrap="">
+(Running SPIN in simulation mode.)
+<pre>$ spin mutex.try2.2.pml | more
+      in the critical section, cnt==1
+          in the critical section, cnt==1
+      in the critical section, cnt==1
+          in the critical section, cnt==1
+      in the critical section, cnt==1
+          in the critical section, cnt==1
+      in the critical section, cnt==1
+          in the critical section, cnt==1
+      in the critical section, cnt==1
+--More--
+</pre>
+</td></tr></tbody></table>
+
+</p><p>This looks fine (cnt is never greater than 1), but that is no
+proof, just the trace (execution sequence) of a particular run. We
+should use SPIN in verification mode.</p>
+
+
+<table width="90%" align="center" border="6" bgcolor="#e0e0e0"><tbody><tr><td nowrap="">
+(Running SPIN in verification mode.)
+<pre>$ spin -a mutex.try2.2.pml
+$ cc -o pan pan.c
+$ ./pan
+hint: this search is more efficient if pan.c is compiled -DSAFETY
+(Spin Version ... IGNORE ALL THE OUTPUT FOLLOWING FROM HERE ... 
+</pre>
+</td></tr></tbody></table>
+
+<p>
+No assertion violation is recorded. <b>This proves that none of the
+  infinitely many execution sequences of <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.try2.2.pml">mutex.try2.2.pml</a> violates mutual exclusion.</b> To see what
+  happens if there is some execution sequence that violates the
+  assertion, let us compare this with <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.stupid.pml">mutex.stupid.pml</a>.</p>
+
+
+<table width="90%" align="center" border="6" bgcolor="#e0e0e0"><tbody><tr><td nowrap="">
+(Running SPIN in verification mode.)
+<pre>$ spin -a mutex.stupid.pml
+$ cc -o pan pan.c
+$ ./pan
+hint: this search is more efficient if pan.c is compiled -DSAFETY
+pan: assertion violated (cnt==1) (at depth 7)
+pan: wrote mutex.stupid.pml.trail
+...
+</pre>
+</td></tr></tbody></table>
+
+<p>To summarise the above, we have seen examples of how to use SPIN
+      in order to prove that no "bad" execution sequence exists.  Now
+      we will look in more detail on how to find a "bad" execution
+      sequence and how to use it to debug our code.
+
+</p><p> The idea is to use mutex.try1, which guarantees mutual exclusion
+      but can deadlock, together with mutex.try2, which is used to
+      resolve the deadlock in case both processes want to enter their
+      critical section simultaneously.
+
+</p><p>
+It is tempting to think that, as both mutex.try1 and mutex.try2 guarantee mutual exclusion and as their defiencies are orthogonal,
+one may obtain a correct algorithm by combining the two into one. But careful, there are (at least) two different possibilities, namely
+<a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.peterson-a.pml">mutex.peterson-a.pml</a> and <a href="file:///Users/alexanderkurz/Documents/leicester--CO7209/Material/mutex.peterson-b.pml">mutex.peterson-b.pml</a>. 
+
+</p>
+
+<h3>Exercise: Are they both correct? Or maybe none of them?
+Run them with SPIN as above to find out.</h3>
+
+In more detail: <br>
+Run simulations first. <br>
+Describe your findings. <br>
+Use the verifier. <br>
+Produce a shortest error trail. <br>
+Explain the error trail by simultaneously reading the program. <br>
+Explain the differences of the programs. <br>
+Explain how such a small difference in the code can lead to such different behaviour.<br>
+
+<br>
+
+<hr>
+
+<p></p>
+<h2>Summary:</h2>
+
+
+<p></p>
+
+<table width="90%" align="center" border="6" bgcolor="#e0e0e0"><tbody><tr><td nowrap="">
+<pre>############################################
+# simulation run
+
+
+$ spin mutex.try1.pml
+
+
+############################################
+# verification mode with option -a
+# produces a C program pan.c 
+# which is compiled with cc into a file pan
+# and executed via ./pan
+
+
+$ spin -a mutex.try1.pml
+$ cc -o pan pan.c
+$ ./pan 
+
+
+############################################
+# first three lines are as above
+# the next two find the shortest error trace
+# (the "14" is derived from the output of the third line)
+# the last line displays the error trace
+
+$ spin -a mutex.try1.pml
+$ cc -o pan pan.c
+$ ./pan 
+$ cc -DREACH -o pan pan.c
+$ ./pan -i -m14
+$ spin -p -t mutex.try1.pml
+</pre>
+</td></tr></tbody></table>
+
+
+<hr>
+
+<p></p>
+<h3>References:</h3> <a href="http://spinroot.com/spin/Doc/Book_extras/index.html">Gerard
+Holzmann. The Spin Model Checker.</a> Chapter 2.
+
+
+
+
+</body></html>
