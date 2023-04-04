@@ -1,0 +1,36 @@
+/* 
+
+The following algorithm is intended to guarantee mutual exclusion,
+that is, it should guarantee that it is impossible for both processes
+to be in the critical section at the same time.
+
+But there maybe further correctness criteria. 
+
+Is the algorithm correct? 
+
+*/
+
+/* two global variables known to both processes */
+bool	turn, flag[2];
+
+/* process zero executes an infinite loop */
+proctype P0()
+{	
+        me=0; other=1;
+        turn=other;
+        flag[me]=true;
+        while (flag[other] && turn == other) do {skip};
+        /* critical section */        
+        flag[me]=false;
+}
+
+/* process one executes an infinite loop */
+proctype P1()
+{	
+        me=1; other=0;
+        turn=other;
+        flag[me]=true;
+        while (flag[other] && turn == other) do {skip};
+        /* critical section */        
+        flag[me]=false;
+}
