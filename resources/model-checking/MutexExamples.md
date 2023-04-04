@@ -1,6 +1,18 @@
 # Model Checking with Spin - Tutorial 1 (Mutual Exclusion)
 
-(some general introduction about model checking in class ... testing/simulation vs verification ...)
+Mutual exclusion is the hello world of distributed computing. In the lecture, I started with a quick overview of the following.
+
+- Race conditions.
+- Modelling concurrency with non-determinism.
+- Reducing safety and liveness properties of distributed systems to graph search.
+- Using software tools (model checkers) to analyse distributed protocols.
+
+We will also touch on ideas that we will deepen in later lectures:
+
+- Model checking as sat-solving temporal logic.
+- "Bad" execution sequences as solutions of a satisfiability problem.
+- Automata over infinite words.
+
 
 ## Introduction
 
