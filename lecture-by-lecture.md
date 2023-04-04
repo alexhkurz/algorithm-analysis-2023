@@ -64,13 +64,17 @@ History is the science of how societies change. If you want to be able to look b
 
 - L 8.2 was based on these notes on [Complexity Theory](https://hackmd.io/@alexhkurz/rJCjGUz-3).
 
+## Week 9: Model Checking
+
+(this is part of the concurrency stream)
+
+- [L 9.1](resources/model-checking/MutexExamples.md).
+
 ---
 
 upcoming (current state of planning):
 
-Week 9: Semantic Web and Linked Data
-
-Week 10: Model Checking
+tba
 
 ...
 
