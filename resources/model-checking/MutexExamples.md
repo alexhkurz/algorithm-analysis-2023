@@ -7,7 +7,7 @@ Mutual exclusion is the hello world of distributed computing. In the lecture, I 
 - Reducing safety and liveness properties of distributed systems to graph search.
 - Using software tools (model checkers) to analyse distributed protocols.
 
-We will also touch on ideas that we will deepen in later lectures:
+We will also touch on ideas that we may deepen in later lectures:
 
 - Model checking as sat-solving temporal logic.
 - "Bad" execution sequences as solutions of a satisfiability problem.
