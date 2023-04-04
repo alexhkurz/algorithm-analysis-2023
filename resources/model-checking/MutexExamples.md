@@ -229,20 +229,20 @@ bool	turn;
 byte	count;
 
 active [2] proctype P1()
-{	    pid me, other;
+{       pid me, other;
 
-	    me = _pid;
-	    other = 1 - _pid;
+        me = _pid;
+        other = 1 - _pid;
 
 again:	turn = other;
         ! (turn==other) ->
 
-	    count++;
-	    printf("in the critical section, count==%d\n",count); 
+        count++;
+        printf("in the critical section, count==%d\n",count); 
         assert(count == 1); 
         count--;
 
-	    goto again
+        goto again
 }
 ```
 
@@ -265,8 +265,8 @@ So let us run Spin in verification mode:
 
 ```
 spin -a mutex.try2.2.pml
-(base) .../algorithm-analysis-2023/resources/model-checking/src > cc -o pan pan.c        
-(base) .../algorithm-analysis-2023/resources/model-checking/src > ./pan
+cc -o pan pan.c        
+./pan
 
 (Spin Version 6.5.1 -- 20 December 2019)
 ```
