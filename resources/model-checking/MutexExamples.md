@@ -335,6 +335,7 @@ cc -o pan pan.c
 cc -DREACH -o pan pan.c
 ./pan -i -m7
 spin -p -t mutex.try1.pml
+```
 
 ## References
 
