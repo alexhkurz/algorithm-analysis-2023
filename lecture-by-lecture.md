@@ -6,9 +6,13 @@
 
 ## Week 2: DFAs and NFAs 
 
+(automata)
+
 As a scaffolding for the lectures on DFAs and NFAs I use my notes entitled [A Short Introduction to Automata](https://hackmd.io/@alexhkurz/HylLKujCP). These notes are not self-contained so attending the lectures is essential. If anything is unclear ask questions in class or office hours. Assignment available on Canvas.
 
 ## Week 3: Knowledge Representation and Logic Programming
+
+(logic)
 
 Questions of knowledge representation underly many areas such as data bases, expert systems, semantic web, ontologies, automated reasoning. This week we will learn the *query-answering algorithm* of the best-known logic programming language, Prolog.
 
@@ -26,6 +30,8 @@ To test your understanding of unification and resolution answer the questions of
 
 ## Week 4: Distributed Hash Tables
 
+(concurrency)
+
 - L 4.1:
     - Review of and [feedback on the homework](feedback-for-homework.md) on finite automata.
     - [Introduction to IPFS](https://hackmd.io/@alexhkurz/rJMmmc-0o).
@@ -33,11 +39,15 @@ To test your understanding of unification and resolution answer the questions of
 
 ## Week 5: Undecidability and NP-Completeness  
 
+(automata)
+
 - L 5.1: [Computability, Turing Machines, Undecidability](https://hackmd.io/@alexhkurz/SyD42sbRs) ... [The Proof of the Undecidability of the Halting Problem](resources/Automata/Halting%20Problem.pdf)
 
 - L 5.2: [Complexity Theory, P vs NP](https://hackmd.io/@alexhkurz/Hk0O2lPCj)
 
 ## Week 6: SAT-solvers
+
+(logic)
 
 - L 6.1: We started with [feedback for homework week 3](feedback-for-homework.md) and spent some time revising unification and resolution. 
 
@@ -50,6 +60,8 @@ To test your understanding of unification and resolution answer the questions of
 
 ## Week 7: The CAP Theorem 
 
+(concurrency)
+
 History is the science of how societies change. If you want to be able to look beyond the hype of the day and see the long-term trends it is important to get a sense of the history of a subject. We use the topic of this week to practice some methods that help us to gain a deeper historical understanding of distributed systems.
 
 - L 7.1: Based on the list of publications of [Leslie Lamport](https://lamport.azurewebsites.net/pubs/pubs.html) I made some remarks on the early history of concurrency and distributed systems. We then read in some detail parts of [Time, Clocks and the Ordering of Events in a Distributed System](resources/Concurrency/Lamport-time-clocks.pdf) (ignore the highlights which I only made to help me structure the lecture.)
@@ -60,13 +72,15 @@ History is the science of how societies change. If you want to be able to look b
 
 ## Week 8: Big-O and Complexity Theory
 
+(automata)
+
 - L 8.1: We started with feedback for [HW6](https://hackmd.io/@alexhkurz/ByaOUajy2) and also presented another version of satisfiability called [propositional tableaux](resources/Logic/logicnotes-tableaux.pdf). After that we introduced the [Big-O notation](resources/Automata/logicnotes-big-O.pdf) at the hand of [Bubble Sort](https://hackmd.io/@alexhkurz/rk314el-n).
 
 - L 8.2 was based on these notes on [Complexity Theory](https://hackmd.io/@alexhkurz/rJCjGUz-3).
 
 ## Week 9: Model Checking
 
-(this is part of the concurrency stream)
+(concurrency)
 
 - [L 9.1](resources/model-checking/MutexExamples.md).
 
