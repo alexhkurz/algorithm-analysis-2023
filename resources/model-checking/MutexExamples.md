@@ -123,7 +123,7 @@ the output of the processes in columns, the indentation being proportional to th
 
 ## Running Spin in Verification Mode
 
-()
+(in class we discussed simulation (testing) vs verification and why verification is a powerful tool to detect and debug race conditions)
 
 ```
 spin -a mutex.try1.pml
@@ -185,7 +185,7 @@ spin: trail ends after 4 steps
 
 ## Mutual Exclusion - Second Try
 
-The second try solves the problem of the first one, but has its own shortcomings.
+The second try achieves mutual exclusion avoiding deadlock (as in the first try) but forces both processes to take turns. (If one process "quits", the other "starves".)
 
 ```c
 bool    turn;
@@ -314,11 +314,7 @@ Here are some ideas to guide your analysis:
 - Explain the differences of the programs. 
 - Explain how such a small difference in the code can lead to such different behaviour.
 
-
-
-
 ## Summary of Commands
-
 
 ```
 # simulation run
