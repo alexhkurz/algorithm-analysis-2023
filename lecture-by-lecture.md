@@ -85,12 +85,21 @@ History is the science of how societies change. If you want to be able to look b
 - [L 9.1](resources/model-checking/MutexExamples.md).
 - [L 9.2](resources/model-checking/Needham-Schroeder.md).
 
+## Week 10: Temporal Logic
+
+(logic)
+
+- L 10.1: Satisfiability of Linear Temporal Logic
+- L 10.2: Safety and Liveness Properties
+
 ---
 
 upcoming (current state of planning):
 
-tba
+- Week 11: Regular Expressions
+- Week 12 and 13: tba
+- Week 14: Project Presentations
 
-...
+
 
 
