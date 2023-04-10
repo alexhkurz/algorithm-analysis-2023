@@ -20,4 +20,40 @@ Moreover, we will encounter again the idea of modelling concurrency via non-dete
 
 ## Introduction
 
-Recall from our earlier work on satisfiability of propositional logic (indirect truth tables, propositional tableaux) that a formula $\phi$ is valid ...
+Recall from our earlier work on satisfiability of propositional logic (indirect truth tables, propositional tableaux) that a formula $\phi$ is valid iff (if and only if) $\neg\phi$ is not satisfiable. We then looked at algorithms (truth tables, indirect truth tables, propositional tableaux) that, given an arbitrary formula $\phi$ finds a valuation (also known as a model) that satisfies $\phi$.
+
+To extend this program to LTL, we need to 
+- define the language (syntax) of LTL
+- define the semantics of LTL
+- describe an algorithm for checking the satisfiability of LTL-formulas
+
+## Syntax of LTL
+
+...
+
+## Semantics of LTL
+
+...
+
+## Satisfiability of LTL
+
+...
+
+## Checking LTL-formulas with Spin
+
+...
+
+## Equivalence between formulas and automata
+
+...
+
+### The automaton of a formula
+
+...
+
+### The formula of an automaton
+
+...
+
+
+
