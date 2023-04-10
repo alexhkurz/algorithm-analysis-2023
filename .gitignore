@@ -29,5 +29,7 @@ local/*
 pan.*
 pan
 *.trail
-
+*.tmp
+check.prp
+*.pml.tcl
 

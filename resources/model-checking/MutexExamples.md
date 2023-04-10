@@ -208,9 +208,7 @@ again:  turn = other;
 
 ```
 
-What does this program do? What is good and what is bad? 
-
-**Discussion:** Discuss the respective (dis)advantages of the two tries. What ideas to make progress on the problem does this suggest?
+**Discussion:** Discuss the respective (dis)advantages of try 1 and try 2. What ideas to make progress on the problem does this suggest?
 
 ## Analysing the Second Try with Spin
 

@@ -203,7 +203,7 @@ active proctype Intruder() {
   od;
 }
 
-
+/* propositional variables for use in the formulas */
 
 #define success		(statusA == ok && statusB == ok)
 #define aliceBob	(partnerA == bob)
@@ -211,14 +211,13 @@ active proctype Intruder() {
 #define knowNA		(knowNA)
 #define knowNB		(knowNB)
 
+/* 
 
-/*
-
-Example properties (invent your own):
-
-ltl {[]  (success && bobAlice -> aliceBob)}
+Example formulas/properties (invent your own):
 
 ltl {[]  (success && aliceBob -> bobAlice)}
+
+ltl {[]  (success && bobAlice -> aliceBob)}
 
 */
 
