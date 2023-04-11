@@ -211,32 +211,3 @@ The counter-example in `all.pml.trail` can be inspected with `spin -t all.pml`. 
 
 **Exercise:** Why is that a counter-example to $\Box\Diamond p\to\Diamond\Box p$?
 
----
-
-
-
-## Complexity of LTL Model Checking
-
-Given a finite state machine (model) $M$ and an LTL-formula $\phi$, determine whether all execution sequences of the model satisfy the formula, in symbols, whether $M\models\phi$.
-
-**Theorem:** The LTL Model Checking problem is PSPACE-complete.
-
-Let us unpack this. This will require quite a lot of definitions, but you will recognize them as variations of definitions we have seen when we discussed NP-completeness.
-
-**Definition:** A problem is in PSPACE if it is decidable in polynomial space on a deterministic Turing machine.
-
-**Remark:** One can replace deterministic by non-determinstic without changing the class of problems, that is, NPSPACE=PSPACE.
-
-**Definition:** A problem is PSPACE-hard if all problems in PSPACE are polynomial time reducible to it. A problem is PSPACE-complete if it is PSPACE-hard and in PSPACE.
-
-
-
-
-<!-->
-
-## References
-
-https://moves.rwth-aachen.de/wp-content/uploads/WS1920/MC/mc2019_handout_lec9.pdf
-
-
-
