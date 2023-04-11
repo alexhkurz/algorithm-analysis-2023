@@ -89,7 +89,7 @@ History is the science of how societies change. If you want to be able to look b
 
 (logic)
 
-- L 10.1: Satisfiability of Linear Temporal Logic
+- L 10.1: [Satisfiability of Linear Temporal Logic](resources/temporal-logic/LTL.md)
 - L 10.2: Safety and Liveness Properties
 
 ---
