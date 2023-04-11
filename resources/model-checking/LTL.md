@@ -37,7 +37,7 @@ Grammar:
 	ltl ::= opd | ( ltl ) | ltl binop ltl | unop ltl
 
 Operands (opd):
-	true, false, user-defined names starting with a lower-case letter
+	user-defined names starting with a lower-case letter (propositional variables)
 
 Unary Operators (unop):
 	[]	(the temporal operator always)
@@ -55,8 +55,12 @@ Binary Operators (binop):
 
 **Remark:** The definition above is in the style typically used in programming languages. There is also a shorter math-style which reads as follows. (Why are we allowed to drop $\to$ and $\leftrightarrow$?)
 
-$$\phi::=\top \mid \bot \mid p \mid \neg\phi \mid
+$$\phi::= p\mid \neg\phi \mid
 \phi\wedge\phi \mid \phi\mid \Box\phi \mid \Diamond\phi$$
+
+where $p$ is a propositional variable (such as `success` or `aliceBob` or `bobAlice`) chosen from a fixed set $\mathbb P$.
+
+**Remark:** All other Boolean operators such as disjunction and implication can be defined from $\neg$ and $\wedge$. 
 
 **Precedence rules:** To save brackets, we say
 that the unary operators bind stronger than $\wedge,\vee$ which bind stronger than $\to$ which binds
@@ -64,23 +68,18 @@ stronger than $\leftrightarrow$. For example, $$\neg p\wedge \Box
 r \wedge s \to t \leftrightarrow u$$
 is bracketed as $$(((\neg p\wedge \Box r) \wedge s) \to t) \leftrightarrow u$$
 
-
-
-We also explained the following remark in [LTL syntax according to the Spin manual](http://spinroot.com/spin/Man/ltl.html). (To summarize: The next-time operator `X` is useful for the understanding and implementation of LTL, but not so useful its applications to software engineering.)
+**Remark:** (I had planned to explain the following from [LTL syntax according to the Spin manual](http://spinroot.com/spin/Man/ltl.html) but then skipped it. To summarize: The next-time operator `X` is useful for the understanding and implementation of LTL, but not so useful its applications to software engineering.)
 
 ```
 NOTES
 If the Spin sources are compiled with the preprocessor directive -DNXT, the set of temporal operators is extended with one additional unary operator: X (next). The X operator asserts the truth of the subformula that follows it for the next system state that is reached. The use of this operator can void the validity of the partial order reduction algorithm that is used in Spin, if it changes the stutter invariance of an LTL formula. For the partial order reduction strategy to be valid, only LTL properties that are stutter invariant can be used. Every LTL property that does not contain the X operator is guaranteed to satisfy the required property. A property that is not stutter invariant can still be checked, but only without the application of partial order reduction.
 ```
 
-
-
 ## Semantics of LTL
 
 The semantics of LTL-formulas is defined by recursion over the structure of formulas. This means that for each case of the syntax definition
 
-$$\phi::=\top \mid \bot \mid p \mid \neg\phi \mid
-\phi\wedge\phi \mid \Box\phi \mid \Diamond\phi$$
+$$\phi::= p \mid \neg\phi \mid \phi\wedge\phi \mid \Box\phi \mid \Diamond\phi$$
 
 we will have a corresponding case for the semantics definition.
 
@@ -90,14 +89,40 @@ Before we can give the definition of the semantics, we need to define what a seq
   natural numbers; $(v_n)_{n\in\mathbb N}$, or $(v_n)$, is short
   for $(v_0,v_1,v_2\ldots)$.
 
-**Semantics of LTL:** Let $M=(v_n)_{n\in\mathbb N}$
+**Remark:** In logic, we call  **model** the data needed to evaluate a formula. In Boolean logic, a model is an assignment 
+
+$$v: \mathbb P \to \mathbb 2$$
+
+from the set of propositional variables $\mathbb P$ to the set of truth values $\mathbb 2=\{0,1\}$.  In linear temporal logic, a model is a sequence 
+
+$$v_n: \mathbb P \to \mathbb 2$$
+
+of such valuations, with the $n\in\mathbb N$ being understood as points in time.
+
+In logic, given a model $M$ and a formula $\phi$, we write
+
+$$M\models \phi$$
+
+to say that $\phi$ evaluates to true in the model $M$.
+
+**Semantics of LTL:** Let $S=(v_n)_{n\in\mathbb N}$
 be a sequence of valuations $v_n:\mathbb P\to \mathbb 2$.
-- $M,n\models\top$,
-- $M,n\models p $ if $v_n(p)=1$,
-- $M,n\models \neg \phi\quad$ if not $M,n\models\phi$,
-- $M,n\models \phi\wedge\psi\quad$ if $M,n\models\phi$ and $M,n\models\psi$,
-- $M,n\models\Box\phi\quad$ if $M,m\models\phi$ for all $m\ge n$,
-- $M,n\models\Diamond\phi\quad$ if $M,m\models\phi$ for some $m\ge n$,
+- $S,n\models p $ if $v_n(p)=1$,
+- $S,n\models \neg \phi\quad$ if not $S,n\models\phi$,
+- $S,n\models \phi\wedge\psi\quad$ if $S,n\models\phi$ and $S,n\models\psi$,
+- $S,n\models\Box\phi\quad$ if $S,m\models\phi$ for all $m\ge n$,
+- $S,n\models\Diamond\phi\quad$ if $S,m\models\phi$ for some $m\ge n$.
+
+The first item can be understood as looking up the value of $p$ in the memory at time $n$. Items 2 and 3 are essentially the truth tables for negation and conjunction. Items 4 and 5 make precise what we mean by "always" and "eventually".
+
+So far we defined $\models$ in the case that a model is a sequence of valuations plus a point in time. If we don't specify a point in time, we take the initial point $0$:
+
+$$S\models\phi \stackrel{\rm def}{\ Leftrightarrow \ } S,0\models\phi$$
+
+Finally, if we have a program `prog.pml`, then we define 
+
+$${\tt prog.pml}\models\phi \stackrel{\rm def}{\ Leftrightarrow \ } S\models\phi \textrm{\quad for all execution sequences S of {\tt prog.pml}$$
+
 
 ## Checking Satisfiability of LTL
 
