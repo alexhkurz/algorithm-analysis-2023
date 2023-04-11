@@ -55,10 +55,9 @@ Binary Operators (binop):
 
 **Remark:** The definition above is in the style typically used in programming languages. There is also a shorter math-style which reads as follows. (Why are we allowed to drop $\to$ and $\leftrightarrow$?)
 
-$$\phi::= p\mid \neg\phi \mid
-\phi\wedge\phi \mid \phi\mid \Box\phi \mid \Diamond\phi$$
+$$\phi::= p\mid \neg\phi \mid \phi\wedge\phi\mid \Box\phi \mid \Diamond\phi$$
 
-where $p$ is a propositional variable (such as `success` or `aliceBob` or `bobAlice`) chosen from a fixed set $\mathbb P$.
+where $p$ is a propositional variable (such as `success` or `aliceBob` or `bobAlice`) chosen from a given set $\mathbb P$.
 
 **Remark:** All other Boolean operators such as disjunction and implication can be defined from $\neg$ and $\wedge$. 
 
@@ -68,7 +67,7 @@ stronger than $\leftrightarrow$. For example, $$\neg p\wedge \Box
 r \wedge s \to t \leftrightarrow u$$
 is bracketed as $$(((\neg p\wedge \Box r) \wedge s) \to t) \leftrightarrow u$$
 
-**Remark:** (I had planned to explain the following from [LTL syntax according to the Spin manual](http://spinroot.com/spin/Man/ltl.html) but then skipped it. To summarize: The next-time operator `X` is useful for the understanding and implementation of LTL, but not so useful its applications to software engineering.)
+**Remark:** (I had planned to explain the following from [LTL syntax according to the Spin manual](http://spinroot.com/spin/Man/ltl.html) but then skipped it. To summarize: The next-time operator `X` is useful for the understanding and implementation of LTL, but not so useful for applications to software engineering.)
 
 ```
 NOTES
@@ -99,7 +98,7 @@ $$v_n: \mathbb P \to \mathbb 2$$
 
 of such valuations, with the $n\in\mathbb N$ being understood as points in time.
 
-In logic, given a model $M$ and a formula $\phi$, we write
+In general, given a model $M$ and a formula $\phi$, we write
 
 $$M\models \phi$$
 
@@ -113,15 +112,15 @@ be a sequence of valuations $v_n:\mathbb P\to \mathbb 2$.
 - $S,n\models\Box\phi\quad$ if $S,m\models\phi$ for all $m\ge n$,
 - $S,n\models\Diamond\phi\quad$ if $S,m\models\phi$ for some $m\ge n$.
 
-The first item can be understood as looking up the value of $p$ in the memory at time $n$. Items 2 and 3 are essentially the truth tables for negation and conjunction. Items 4 and 5 make precise what we mean by "always" and "eventually".
+The first item can be understood as looking up the value of $p$ in memory at time $n$. Items 2 and 3 are essentially the truth tables for negation and conjunction. Items 4 and 5 make precise what we mean by "always" ($\Box$) and "eventually" ($\Diamond$).
 
-So far we defined $\models$ in the case that a model is a sequence of valuations plus a point in time. If we don't specify a point in time, we take the initial point $0$:
+So far we defined $\models$ in the case where a model is a sequence of valuations plus a point in time. If we don't specify a point in time, we take the initial point $0$:
 
-$$S\models\phi \stackrel{\rm def}{\ Leftrightarrow \ } S,0\models\phi$$
+$$S\models\phi \stackrel{\rm def}{\ \Leftrightarrow \ } S,0\models\phi$$
 
 Finally, if we have a program `prog.pml`, then we define 
 
-$${\tt prog.pml}\models\phi \stackrel{\rm def}{\ Leftrightarrow \ } S\models\phi \textrm{\quad for all execution sequences S of {\tt prog.pml}$$
+$${\tt prog.pml}\models\phi \stackrel{\rm def}{\ \Leftrightarrow \ } S\models\phi \textrm{\quad for all execution sequences S of {\tt prog.pml}}$$
 
 
 ## Checking Satisfiability of LTL
