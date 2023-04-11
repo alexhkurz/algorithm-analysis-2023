@@ -131,8 +131,8 @@ Spin can be considered as a SAT-solver for temporal logic, which, in addition, a
 Let us check that the following commands allow us to find the attack on `ns.pml`:
 
 ```
-spin -f '![](success && bobAlice -> aliceBob)' > neverclaim.pml
-spin -N neverclaim.pml -a ns.pml  
+spin -f '![](success && bobAlice -> aliceBob)' > neverclaim
+spin -N neverclaim -a ns.pml  
 cc -o pan pan.c
 ./pan -a
 ```
@@ -141,7 +141,7 @@ cc -o pan pan.c
 
 With what we learned about LTL now, we can have a look under the hood. 
 
-For historical reasons, Spin's internal representations of LTL-formulas are known as *never claims*. `spin -f` translates a formula into this internal representation. In our case I decided to call it `neverclaim.pml` and we can inspect it.
+For historical reasons, Spin's internal representations of LTL-formulas are known as *never claims*. `spin -f` translates a formula into this internal representation. In our case I decided to call it `neverclaim` and we can inspect it.
 
 ```c
 never  {    /* ![](success && bobAlice -> aliceBob) */
@@ -177,8 +177,8 @@ active proctype all() {
 and then go through the exercise above, replacing `formula` below accordingly.
 
 ```
-spin -f '!formula' > neverclaim.pml
-spin -N neverclaim.pml -a allp.pml  
+spin -f '!formula' > neverclaim
+spin -N neverclaim -a allp.pml  
 cc -o pan pan.c
 ./pan -a
 ```
@@ -186,8 +186,8 @@ cc -o pan pan.c
 For example, to prove that $\Diamond\Box p \to \Box\Diamond p$ is valid, we run
 
 ```
-spin -f '!(<>[]p -> []<>p)' > neverclaim.pml
-spin -N neverclaim.pml -a allp.pml  
+spin -f '!(<>[]p -> []<>p)' > neverclaim
+spin -N neverclaim -a allp.pml  
 cc -o pan pan.c
 ./pan -a 
 ```
@@ -195,8 +195,8 @@ cc -o pan pan.c
 Or, to show that $\Box\Diamond p\to\Diamond\Box p$ is not valid, run
 
 ```
-spin -f '!([]<>p-><>[]p)' > neverclaim.pml
-spin -N neverclaim.pml -a allp.pml  
+spin -f '!([]<>p-><>[]p)' > neverclaim
+spin -N neverclaim -a allp.pml  
 cc -o pan pan.c
 ./pan -a 
 ```
