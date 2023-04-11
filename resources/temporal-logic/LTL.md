@@ -213,17 +213,9 @@ The counter-example in `all.pml.trail` can be inspected with `spin -t all.pml`. 
 
 ---
 
-## Equivalence between formulas and automata
 
-...
 
-### The automaton of a formula
 
-...
-
-### The formula of an automaton
-
-...
 
 
 
