@@ -89,6 +89,8 @@ but it is more convenient to output a message sequence chart (which only shows t
 spin -M -t ns.pml
 ```
 
+(Alternatively, run `spin -p -t ns.pml | grep network` and reconstruct the MCS by hand.)
+
 For illustration, I display here the message sequence chart (MSC) for a normal run of the protocol. (Check that this picture aligns with Fig. 1 above.)
 
 ![](img/ns.pml.normal.png)
