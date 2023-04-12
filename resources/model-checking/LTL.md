@@ -185,7 +185,7 @@ This is a finite state machine that is in an infinite loop from which it can onl
 
 One can adapt the previous section to the case where one has no model and only a formula. One way of doing this is to create a model that does not restrict the set of all execution sequences.
 
-For example, if the formula only uses propositional variables `p`, we can use [`allp.pml`](../model-checking/src/allp.pml)
+For example, if `p` is the only propositional variable in the formula, we can use [`allp.pml`](../model-checking/src/allp.pml)
 
 ```c
 bool p; 
@@ -225,7 +225,7 @@ cc -o pan pan.c
 ./pan -a 
 ```
 
-The counter-example in `all.pml.trail` can be inspected with `spin -t all.pml`. In the example above it looks like
+The counter-example in `allp.pml.trail` can be inspected with `spin -t allp.pml`. In the example above it looks like
 
 ```
   <<<<<START OF CYCLE>>>>>
