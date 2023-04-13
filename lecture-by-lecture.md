@@ -90,7 +90,7 @@ History is the science of how societies change. If you want to be able to look b
 (logic)
 
 - L 10.1: [Satisfiability of Linear Temporal Logic](resources/model-checking/LTL.md)
-- L 10.2: Safety and Liveness Properties
+- L 10.2: [LTL Model Checking is PSPACE-complete](https://hackmd.io/@alexhkurz/rkGoxQSz3)
 
 ---
 
