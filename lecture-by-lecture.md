@@ -82,8 +82,8 @@ History is the science of how societies change. If you want to be able to look b
 
 (concurrency)
 
-- [L 9.1](resources/model-checking/MutexExamples.md).
-- [L 9.2](resources/model-checking/Needham-Schroeder.md).
+- L 9.1: [Model Checking with Spin - Tutorial 1 (Mutual Exclusion)](resources/model-checking/MutexExamples.md).
+- L 9.2: [Model Checking with Spin - Tutorial 2 (Needham-Schroeder)](resources/model-checking/Needham-Schroeder.md).
 
 ## Week 10: Temporal Logic
 
