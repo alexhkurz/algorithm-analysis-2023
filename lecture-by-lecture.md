@@ -95,7 +95,7 @@ History is the science of how societies change. If you want to be able to look b
 # Week 11: Regular Expressions
 
 - L 11.1: [Composing Automata](https://hackmd.io/@alexhkurz/HyDaYbnzn)
-- L 11.2: not available yet: [Regular Expressions](https://hackmd.io/@alexhkurz/rJEjuGhMn)
+- L 11.2: [Regular Expressions](https://hackmd.io/@alexhkurz/rJEjuGhMn)
 
 ---
 
