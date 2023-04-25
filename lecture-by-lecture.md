@@ -94,15 +94,24 @@ History is the science of how societies change. If you want to be able to look b
 
 # Week 11: Regular Expressions
 
+(automata)
+
 - L 11.1: [Composing Automata](https://hackmd.io/@alexhkurz/HyDaYbnzn)
 - L 11.2: [Regular Expressions](https://hackmd.io/@alexhkurz/rJEjuGhMn)
+
+# Week 12: Concurrent Algorithms and Data Structures
+
+(concurrency)
+
+- L 12.1: [Atomicity, Sequential Consistency and Weak Memory](Atomicity, Sequential Consistency and Weak Memory)
+- L 12.2: Non-blocking Data Structures
 
 ---
 
 upcoming (current state of planning):
 
-- Week 12: Semantic Web
-- Week 13: Concurrent Algorithms and Data Structures
+- Week 13: Semantic Web
+
 - Week 14: Project Presentations
 
 
