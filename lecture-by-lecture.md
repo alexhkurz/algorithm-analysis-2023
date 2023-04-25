@@ -103,7 +103,7 @@ History is the science of how societies change. If you want to be able to look b
 
 (concurrency)
 
-- L 12.1: [Atomicity, Sequential Consistency and Weak Memory](Atomicity, Sequential Consistency and Weak Memory)
+- L 12.1: [Atomicity, Sequential Consistency and Weak Memory](https://hackmd.io/@alexhkurz/ryEdSuVXh)
 - L 12.2: Non-blocking Data Structures
 
 ---
