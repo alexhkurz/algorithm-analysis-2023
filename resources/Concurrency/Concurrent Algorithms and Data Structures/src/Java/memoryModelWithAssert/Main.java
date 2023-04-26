@@ -1,3 +1,4 @@
+// run with java -ea Main
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
