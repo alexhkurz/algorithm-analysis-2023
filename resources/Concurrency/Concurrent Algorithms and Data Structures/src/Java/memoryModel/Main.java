@@ -7,7 +7,7 @@ public class Main {
     private static int b = 0;
 
     public static void main(String[] args) throws InterruptedException {
-        int[] counters = new int[4];
+        int[] counters = new int[4];    
         int iterations = 1000;
 
         for (int i = 0; i < iterations; i++) {
