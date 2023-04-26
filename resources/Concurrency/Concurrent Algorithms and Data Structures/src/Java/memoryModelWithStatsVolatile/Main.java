@@ -1,6 +1,4 @@
-// throws an exception when it violates sequential consistency
-// run with `java -ea Main`
-
+// use `java Main | gnomon` to benchmark
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
