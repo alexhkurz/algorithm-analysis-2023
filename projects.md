@@ -2,7 +2,7 @@
 
 The projects are coming to an end. There have been a number of assignments during the semester on Canvas. Here are some hints for your final submission and the presentation.
 
-## The Repository
+## The Repository (46 points)
 
 - The project must be open source and on a public git repository.
 - There should be an introduction motivating the project and explaining why it is interesting (a good project has a convincing narrative).
@@ -21,7 +21,7 @@ The projects are coming to an end. There have been a number of assignments durin
 
 The last point is particularly important to me. A good open source project is one that inspires others to take it further and provides a basis for future developments.  
 
-## The Presentation
+## The Presentation (20 points)
 
 The presentation will take up some of the points already mentioned above, for example:
 
