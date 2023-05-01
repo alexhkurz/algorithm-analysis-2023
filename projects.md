@@ -5,6 +5,7 @@ The projects are coming to an end. There have been a number of assignments durin
 ## The Repository (46 points)
 
 - The project must be open source and on a public git repository.
+- The repository is structured in a way that makes it as easy as possible for a reader to access the relevant information. This includes proper use of markdown syntax.
 - There should be an introduction motivating the project and explaining why it is interesting (a good project has a convincing narrative).
 - There should be a literature review, references to related work and theoretical background (a good project describes the wider context in which it is situated).
 - The readme must contain a description of how to deploy and run the software.
@@ -28,6 +29,7 @@ The presentation will take up some of the points already mentioned above, for ex
 - There should be an introduction motivating the project and explaining why it is interesting.
 - There should be a literature review, references to related work and theoretical background.
 - Some details on design, specification and implementation. 
+- The role of data structures and algorithms in the project. Describe the algorithms involved in some detail, in particular if you designed and implemented them yourself.
 - How was the work divided between group members? Who was responsible for what?
 - Some details on results and achievements.
 - Directions for future development.
