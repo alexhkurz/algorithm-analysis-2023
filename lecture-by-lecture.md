@@ -106,11 +106,11 @@ History is the science of how societies change. If you want to be able to look b
 - L 12.1: [Atomicity, Sequential Consistency and Weak Memory](https://hackmd.io/@alexhkurz/ryEdSuVXh)
 - L 12.2: [Safety, Liveness, Fairness](https://hackmd.io/@alexhkurz/SkndPww7n) 
 
+# Week 13: Semantic Web 
+
 ---
 
 upcoming (current state of planning):
-
-- Week 13: Semantic Web
 
 - Week 14: Project Presentations
 

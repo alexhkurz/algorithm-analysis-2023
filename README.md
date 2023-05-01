@@ -8,11 +8,12 @@ Quick links:
 
 - [Lecture by lecture](lecture-by-lecture.md)
 - [Report](report.md)
+- [Projects](projects.md)
 - [Git best practices](git-best-practices.md)
 
 Various links indirectly related to the course:
 
-- Blogs on Software Engineering (and related)
+- Blogs on Altorithms, Software Engineering (and related)
     - [Werner Vogels](https://www.allthingsdistributed.com/articles.html)  
     - [Vitalik Buterin](https://vitalik.ca/)
     - [Alex Kladov](https://matklad.github.io/)
