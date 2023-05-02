@@ -108,6 +108,8 @@ History is the science of how societies change. If you want to be able to look b
 
 # Week 13: Semantic Web 
 
+- [L 13.1](https://hackmd.io/@alexhkurz/HyjfN2pmn)
+
 ---
 
 upcoming (current state of planning):
