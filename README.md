@@ -20,5 +20,6 @@ Various links indirectly related to the course:
     - [Hillel Wayne](https://www.hillelwayne.com/)
     - [Gary Marcus](https://substack.com/profile/14807526-gary-marcus)
     - [Scott Aaronson](https://scottaaronson.blog/)  
+    - [Not a Monad Tutorial](https://www.notamonadtutorial.com/cairo-and-mlir)
     - ... more to come ... let me know your favourites ...
 
