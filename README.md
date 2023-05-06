@@ -13,7 +13,7 @@ Quick links:
 
 Various links indirectly related to the course:
 
-- Blogs on Altorithms, Software Engineering (and related)
+- Blogs on Algorithms, Software Engineering, etc. Some I read regularly, others I just put here to remind myself of having a closer look ...
     - [Werner Vogels](https://www.allthingsdistributed.com/articles.html)  
     - [Vitalik Buterin](https://vitalik.ca/)
     - [Alex Kladov](https://matklad.github.io/)
@@ -21,5 +21,7 @@ Various links indirectly related to the course:
     - [Gary Marcus](https://substack.com/profile/14807526-gary-marcus)
     - [Scott Aaronson](https://scottaaronson.blog/)  
     - [Not a Monad Tutorial](https://www.notamonadtutorial.com/cairo-and-mlir)
+    - [Ruben Verborgh](https://ruben.verborgh.org/blog/2022/12/30/lets-talk-about-pods/)  
+    - [Dean Allmang](https://medium.com/@dallemang/avoiding-llm-hallucinations-data-vs-metadata-11829f116f16)
     - ... more to come ... let me know your favourites ...
 
