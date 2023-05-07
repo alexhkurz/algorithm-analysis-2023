@@ -4,7 +4,7 @@ The projects are coming to an end. There have been a number of assignments durin
 
 ## The Repository (46 points)
 
-- The project must be open source and on a public git repository.
+- The project must be open source and on a public git repository. It must contain a file called LICENSE such as, for example, the [MIT License](./LICENSE).
 - The repository is structured in a way that makes it as easy as possible for a reader to access the relevant information. This includes proper use of markdown syntax.
 - There should be an introduction motivating the project and explaining why it is interesting (a good project has a convincing narrative).
 - There should be a literature review, references to related work and theoretical background (a good project describes the wider context in which it is situated).
@@ -15,7 +15,8 @@ The projects are coming to an end. There have been a number of assignments durin
     - What programming languages and APIs are used?
     - What data structures and algorithms did you implement?
     - How was the work divided between group members? Who was responsible for what?
-- Give details of how the software was tested. Provide the tests that have been written, as well as a description of how to run the tests and reproduce the test test results. 
+- **Beware of Plagiarism:** Make sure that if you took some code from somewhere you make clear, both in the code and in the documentation, from where you took it.
+- Give details of how the software was tested. Most projects should have code that was used for testing. Provide the tests that have been written, as well as a description of how to run the tests and reproduce the test test results. 
 - Depending on the project, there may be other ways of validating the software (eg questionnaires, data analysis, and more).
 - Describe what works and what does not. Did your plans change? What is left to do?
 - Suggest directions for future development. Ideally, a list of possible extensions is described and designed, including details of how the current code base should be modified for the extension.
