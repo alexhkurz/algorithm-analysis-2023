@@ -1,35 +1,33 @@
-projects-2023.md
-
 # Projects 2023
 
 ## List of Projects
 
-**Evolution of Cooperation:** (4) Marc Domingo, Alex Joseph, Austin Simpson, Jaden Suh.
+**[Evolution of Cooperation](https://github.com/alex-joseph5575/evolution_of_cooperation):** (4) Marc Domingo, Alex Joseph, Austin Simpson, Jaden Suh.
 
-**Sudoku Solver:** (3) Dylan Inafuku, Shree Murthy, and Rahul Sura.
+P **Blockchain Snail Racing:** (3) Luke Driscoll, Ryley Jue, Thomas Ogawa 
 
-**VSCode extension:** (1) Alex Vallone
+P **[Sudoku Solver](https://github.com/shmurthy08/Sudoku-Solver):** (3) Dylan Inafuku, Shree Murthy, and Rahul Sura.
 
-**Chess engine:** (4) Cole Matsueda, Tally Holcombe, Chris Isidro, Alan Lu 
+P **[VSCode extension](https://github.com/amv146/BNFC-Extensions):** (1) Alex Vallone
 
-**Simulating Voting Systems:** (4) Gabriel Garcia, Jack Pauly, Gillian Canicosa, Natalie Huante
+P **[Chess engine](https://github.com/ColeMats/CPSC-406-FINALPROJECT):** (4) Cole Matsueda, Tally Holcombe, Chris Isidro, Alan Lu 
 
-**Card Jitsu**: (3) Michael Bishai, Max Pugh, and Jack Donnelly.
+**[Simulating Voting Systems](https://github.com/Jackmpauly/Voting-System-Project.git):** (4) Gabriel Garcia, Jack Pauly, Gillian Canicosa, Natalie Huante
 
-**LatexPy:** (4) Jared Amaral, Nathan Nguyen, Alex Wunderli, and Jose Arellano
+**[Card Jitsu](https://github.com/cdnmonitor/algorithm-jitsu)**: (3) Michael Bishai, Max Pugh, and Jack Donnelly.
 
-**Social Media Moderation:** (4) Amaan Karachiwala, Everett Prussak, Logan Jett, and Zach Inn
+**[LatexPy](https://github.com/amaraljt/LaTeXPy):** (4) Jared Amaral, Nathan Nguyen, Alex Wunderli, and Jose Arellano
 
-**Explainable Chess AI:** (5) BJ Bae, Tyler Kay, Eric Phan, Joan Karstrom, and Raymond Yan
+P **Social Media Moderation:** (4) Amaan Karachiwala, Everett Prussak, Logan Jett, and Zach Inn 
+
+P **Explainable Chess AI:** (5) BJ Bae, Tyler Kay, Eric Phan, Joan Karstrom, and Raymond Yan 
 
 **Blockchain Prediction Market:** (2) Peter Senko and Anthony Moon
-
-**Blockchain Snail Racing:** (3) Luke Driscoll, Ryley Jue, Thomas Ogawa
 
 **Stockfish AI:**  (4) Gabe Davidson, Thomas Kudey, Hayden Fargo, and Marco Mauricio
 
 **Project Parley:** (4) James Tran, Jason Bohlinger, Andrew Broek, and Max Hartel
 
-**Generatively Pretrained Transformer** (4) Lucas Gaudet, Matthew Graham, Tyler Lewis, Liam Propst
+P **Generatively Pretrained Transformer** (4) Lucas Gaudet, Matthew Graham, Tyler Lewis, Liam Propst
 
 **Decentralized Social Media Platform** (1) Decentralized Social Media Platform
