@@ -1,4 +1,4 @@
-# Algorithm Analysis Spring 2023
+# Algorithm Analysis Spring 2023 
 
 Section 1: TuTh 8:30 - 9:45 Keck Center 156  
 Section 2: TuTh 10:00 - 11:15 Keck Center 153  
