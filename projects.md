@@ -4,10 +4,10 @@ The projects are coming to an end. There have been a number of assignments durin
 
 ## The Repository (46 points)
 
-- The project must be open source and on a public git repository. It must contain a file called LICENSE such as, for example, the [MIT License](./LICENSE).
-- The repository is structured in a way that makes it as easy as possible for a reader to access the relevant information. This includes proper use of markdown syntax.
+- The project must be open source and on a public git repository. It must contain a file called LICENSE such as, for example, the [MIT License](./LICENSE). It also must contain a file `.gitignore`. See also [Git best practices](git-best-practices.md). 
+- The repository must be structured in a way that makes it as easy as possible for a reader to access the relevant information. This includes proper use of markdown syntax.
 - There should be an introduction motivating the project and explaining why it is interesting (a good project has a convincing narrative).
-- There should be a literature review, references to related work and theoretical background (a good project describes the wider context in which it is situated).
+- There should be a literature review, references to related work and theoretical background (a good project describes the wider context in which it is situated). References are more useful when it is clear how they relate to the specifics of the project (just "dumping references at the end" is not useful).
 - The readme must contain a description of how to deploy and run the software.
 - The code must run, be well commented and documented.
 - The documentation should include, for example (adapt as appropriate):
