@@ -21,7 +21,7 @@ The projects are coming to an end. There have been a number of assignments durin
 - Describe what works and what does not. Did your plans change? What is left to do?
 - Suggest directions for future development. Ideally, a list of possible extensions is described and designed, including details of how the current code base should be modified for the extension.
 
-The last point is particularly important to me. A good open source project is one that inspires others to take it further and provides a basis for future developments.  
+The last point is particularly important to me. A good open source project is one that inspires others to take it further and provides a basis for future developments. I will also judge your repo on **whether your repo will be a good starting point for future open source development by other developers**.
 
 ## The Presentation (20 points)
 
