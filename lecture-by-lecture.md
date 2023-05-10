@@ -106,15 +106,17 @@ History is the science of how societies change. If you want to be able to look b
 - L 12.1: [Atomicity, Sequential Consistency and Weak Memory](https://hackmd.io/@alexhkurz/ryEdSuVXh). We exhibit a program showing that the memory model of Java is not sequentially consistent, that is, may reorder instructions in a way that allows "impossible" or "inconsistent" results.
 - L 12.2: [Safety, Liveness, Fairness](https://hackmd.io/@alexhkurz/SkndPww7n). 
 
-# Week 13: Semantic Web 
+## Week 13: Semantic Web 
 
 (logic)
 
 How does the WWW work? What is the Semantic Web? What is the business model of platforms and to what do they owe their success? Is censorship unavoidable in a centralized system? What can be decentralized? 
 
-The [slides](https://hackmd.io/@alexhkurz/HyjfN2pmn) only scratch the surface of these questions. From a technical point of view we learn about RDF and SPARQL and briefly mention ontologies. The lectures also hinted at (existing and potential) ramifications of this technology in business and society. While,in these lectures, we steer clear of blockchain technologies they do play an important role in addressing the wider questions.
+The [slides](https://hackmd.io/@alexhkurz/HyjfN2pmn) only scratch the surface of these questions. From a technical point of view we learn about RDF and SPARQL and briefly mention ontologies. The lectures also hinted at (existing and potential) ramifications of this technology in business and society. (While, in these lectures, we steer clear of blockchain technologies they do play an important role in addressing the wider questions.)
 
 ## Week 14: Project Presentations
+
+
 
 
 
