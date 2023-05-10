@@ -70,7 +70,7 @@ History is the science of how societies change. If you want to be able to look b
 
   For further reading I recommend Brewer's [CAP Twelve Years Later: How the "Rules" Have Changed](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed/).
 
-## Week 8: Big-O and Complexity Theory
+## Week 8: Big-O and Time Complexity
 
 (automata)
 
@@ -85,7 +85,7 @@ History is the science of how societies change. If you want to be able to look b
 - L 9.1: [Model Checking with Spin - Tutorial 1 (Mutual Exclusion)](resources/model-checking/MutexExamples.md).
 - L 9.2: [Model Checking with Spin - Tutorial 2 (Needham-Schroeder)](resources/model-checking/Needham-Schroeder.md).
 
-## Week 10: Temporal Logic
+## Week 10: Temporal Logic and Space Complexity
 
 (logic)
 
