@@ -92,14 +92,14 @@ History is the science of how societies change. If you want to be able to look b
 - L 10.1: [Satisfiability of Linear Temporal Logic](resources/model-checking/LTL.md)
 - L 10.2: [LTL Model Checking is PSPACE-complete](https://hackmd.io/@alexhkurz/rkGoxQSz3)
 
-# Week 11: Regular Expressions
+## Week 11: Regular Expressions
 
 (automata)
 
 - L 11.1: [Composing Automata](https://hackmd.io/@alexhkurz/HyDaYbnzn)
 - L 11.2: [Regular Expressions](https://hackmd.io/@alexhkurz/rJEjuGhMn)
 
-# Week 12: Concurrent Algorithms and Data Structures
+## Week 12: Concurrent Algorithms and Data Structures
 
 (concurrency)
 
