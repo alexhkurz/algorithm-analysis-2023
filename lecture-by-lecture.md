@@ -108,13 +108,13 @@ History is the science of how societies change. If you want to be able to look b
 
 # Week 13: Semantic Web 
 
-- [L 13.1](https://hackmd.io/@alexhkurz/HyjfN2pmn)
+(logic)
 
----
+How does the WWW work? What is the semantic web? What is the business model of platforms and to what do they owe their success? What can be decentralized? 
 
-upcoming (current state of planning):
+The [slides](https://hackmd.io/@alexhkurz/HyjfN2pmn) only scratch the surface of these questions. From a technical point of view we learn about RDF and SPARQL and briefly mention ontologies. The lectures also hinted at the ramifications of this technology in business and society.
 
-- Week 14: Project Presentations
+## Week 14: Project Presentations
 
 
 
