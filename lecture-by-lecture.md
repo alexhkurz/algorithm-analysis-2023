@@ -80,14 +80,14 @@ History is the science of how societies change. If you want to be able to look b
 
 ## Week 9: Model Checking
 
-(concurrency)
+(concurrency and logic)
 
 - L 9.1: [Model Checking with Spin - Tutorial 1 (Mutual Exclusion)](resources/model-checking/MutexExamples.md).
 - L 9.2: [Model Checking with Spin - Tutorial 2 (Needham-Schroeder)](resources/model-checking/Needham-Schroeder.md).
 
 ## Week 10: Temporal Logic and Space Complexity
 
-(logic)
+(logic and automata)
 
 - L 10.1: [Satisfiability of Linear Temporal Logic](resources/model-checking/LTL.md)
 - L 10.2: [LTL Model Checking is PSPACE-complete](https://hackmd.io/@alexhkurz/rkGoxQSz3)
@@ -101,14 +101,14 @@ History is the science of how societies change. If you want to be able to look b
 
 ## Week 12: Concurrent Algorithms and Data Structures
 
-(concurrency)
+(concurrency and logic)
 
 - L 12.1: [Atomicity, Sequential Consistency and Weak Memory](https://hackmd.io/@alexhkurz/ryEdSuVXh). We exhibit a program showing that the memory model of Java is not sequentially consistent, that is, may reorder instructions in a way that allows "impossible" or "inconsistent" results.
 - L 12.2: [Safety, Liveness, Fairness](https://hackmd.io/@alexhkurz/SkndPww7n). 
 
 ## Week 13: Semantic Web 
 
-(logic)
+(logic and concurrency)
 
 How does the WWW work? What is the Semantic Web? What is the business model of platforms and to what do they owe their success? Is censorship unavoidable in a centralized system? What can be decentralized? 
 
