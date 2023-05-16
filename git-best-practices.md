@@ -2,11 +2,12 @@
 
 [Git](https://en.wikipedia.org/wiki/Git) is a version control software created by Linus Torvalds (also responsible for giving us Linux). There are different commercial implementations of git. Even though, as some say, the [time has come to give up GitHub](https://sfconservancy.org/blog/2022/jun/30/give-up-github-launch/), the following notes still refer to [Github](https://github.com/). There is also a [lawsuit against Github](https://githubcopilotinvestigation.com/) which is motivated by Github building its success on becoming the repository of open source software development and then, as some claim, abusing the trust that open source developers brought to the platform. I had no time to look into [Resources to Give Up GitHub](https://sfconservancy.org/GiveUpGitHub/) myself yet, but if you want to try alternatives have a go.
 
+
 ## New to Git?
 
 Have a look at this [tutorial](https://guides.github.com/activities/hello-world/). Let me know if there are problems or if you have other helpful sources.
 
-Watch the video of the MIT Missing Lecture Series on [Version Control (Git)](https://missing.csail.mit.edu/2020/version-control/). (Btw, all of the series is highly recommended.)
+Watch the video of the MIT Missing Lecture Series on [Version Control (Git)](https://missing.csail.mit.edu/2020/version-control/). (Btw, all of the series is highly recommended.) Specifically, [6m55s](https://www.youtube.com/watch?v=2sjqTHE0zok&t=6m55s) for technical background (tree, blob, snapshot, dag, merge conflict, commit, object, content address store, reference) and [26:40](https://www.youtube.com/watch?v=2sjqTHE0zok&t=26m40s) for an introductory demo (`git init`, `git status`, `git add`, `git commit`, `git log`, `git cat-file -p <hash>`, `git log --all --graph --decorate`, `git checkout`, `git diff`, `git branch`, `git merge`, `git merge --continue`, `git remote`, `git push`, `git clone`, `git branch --set-upstream-to=origin/master`, `git fetch`, `git pull`, `git config`, `git clone --shallow`, `vim ~/.gitconfig`, `git add -p`, `git diff --cached`, `git blame`, `git show`, `git stash`, `git stash pop`, `git bisect`, `.gitignore`, )
 
 ## Git best practices
 
@@ -26,8 +27,7 @@ Proper use of git will be considered for grading. Depending on the nature of the
 
 ## Further reading
 
-The links below are written for more complex projects than a typical assignment, but it cannot harm to have a look:
-
+- I highly recommend these [Resources](https://missing.csail.mit.edu/2020/version-control/#resources). 
 - [The Git Community Book](http://shafiul.github.io/gitbook/index.html)
 - [Commit Often, Perfect Later, Publish Once: Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)
 - [Examples of gitignore files](https://github.com/github/gitignore)
