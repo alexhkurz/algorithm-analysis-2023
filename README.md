@@ -17,7 +17,7 @@ Various links indirectly related to the course:
     - [Werner Vogels](https://www.allthingsdistributed.com/articles.html)  
     - [Vitalik Buterin](https://vitalik.ca/)
     - [Alex Kladov](https://matklad.github.io/)
-    - [Hillel Wayne](https://www.hillelwayne.com/)
+    - [Hillel Wayne](https://www.hillelwayne.com/) ... [PvNP](https://www.hillelwayne.com/post/np-hard/) ... [SafetyLifeness](https://www.hillelwayne.com/post/safety-and-liveness/) ... [Sudoku](https://www.hillelwayne.com/post/sudoku/) ... [=](https://www.hillelwayne.com/post/equals-as-assignment/) ... 
     - [Gary Marcus](https://substack.com/profile/14807526-gary-marcus)
     - [Scott Aaronson](https://scottaaronson.blog/)  
     - [Not a Monad Tutorial](https://www.notamonadtutorial.com/cairo-and-mlir)
