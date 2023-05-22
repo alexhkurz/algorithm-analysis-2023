@@ -96,6 +96,8 @@ History is the science of how societies change. If you want to be able to look b
 
 (automata)
 
+This week we are going to look under the hood of regular expressions. If you want to get a glimpse of some of the cool applications of regexs have a look at the video on [Data Wrangling](https://www.youtube.com/watch?v=sz_dsktIjt4) from MIT's Missing Semester series.
+
 - L 11.1: [Composing Automata](https://hackmd.io/@alexhkurz/HyDaYbnzn)
 - L 11.2: [Regular Expressions](https://hackmd.io/@alexhkurz/rJEjuGhMn)
 
