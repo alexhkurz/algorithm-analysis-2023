@@ -44,8 +44,17 @@ Proper use of git will be considered for grading. Depending on the nature of the
 
 ## Some commands
 
+- To delete all local files not under version control (can be dangerous):
+  ```
+  git clean -fdx
+  ```
+- If a pull is in conflict with local files and you want to ignore the changes in the local files but still keep a copy:
+  ```
+  git stash
+  ```
 - [To throw away all uncommitted local changes:](http://shafiul.github.io/gitbook/4_undoing_in_git_-_reset,_checkout_and_revert.html)
   ``` 
   git fetch origin
   git reset --hard origin
   ```
+- [`git rebase`](https://shafiul.github.io/gitbook/4_rebasing.html)  
